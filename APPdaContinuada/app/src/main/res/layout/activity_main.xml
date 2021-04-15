@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_placeholderDog1"
+        android:id="@+id/et_idDog1"
+        />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/app_placeholderDog2"
+        android:id="@+id/et_idDog2"
+        app:layout_constraintLeft_toRightOf="@id/et_idDog1"
+       />
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/et_idDog2"
+        android:text="@string/app_comprar"
+        android:id="@+id/bt_compra"
+        android:onClick="criarDog"
+        android:layout_marginTop="200dp"/>
+
+    <ImageView
+        android:layout_width="199dp"
+        android:layout_height="171dp"
+        android:src="@drawable/happy"
+        app:layout_constraintTop_toBottomOf="@id/bt_compra"
+        android:id="@+id/dogHapppy"/>
+
+    <ImageView
+        android:layout_width="199dp"
+        android:layout_height="171dp"
+        android:id="@+id/dogSad"
+        app:layout_constraintLeft_toRightOf="@id/dogHapppy"
+        app:layout_constraintTop_toBottomOf="@id/bt_compra"
+        android:src="@drawable/sad"
+        />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

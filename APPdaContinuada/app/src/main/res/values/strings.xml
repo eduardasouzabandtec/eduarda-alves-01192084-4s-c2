@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">APP da Continuada</string>
+    <string name="app_placeholderDog1">Id do primeiro Dog </string>
+    <string name="app_placeholderDog2">id do segundo Dog</string>
+    <string name="app_comprar">Comprar cachorros</string>
+    <string name="app_error">Deu ruim... Nenhum cachorro encontrado com os ids X e Y</string>
+</resources>
